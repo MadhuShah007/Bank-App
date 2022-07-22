@@ -1,117 +1,127 @@
 <!DOCTYPE HTML>
 
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style>
-.form-container {
-		padding:15% 30%;
-	}
-	.header {
-	padding: 20px;
-    border: 1px solid #eb4034;
-    background-color: #eb4034;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
-		
+	<style>
+		.form-container {
+			padding: 15% 30%;
 		}
 
-	.container {
-		padding:24px 200px;
-		color: #eb4034;
-		font-weight: bold;
-		
+		.header {
+			padding: 20px;
+			border: 1px solid #eb4034;
+			background-color: #eb4034;
+			border-bottom-left-radius: 25%;
+			border-bottom-right-radius: 25%;
+
 		}
-		
+
+		.container {
+			padding: 24px 200px;
+			color: #eb4034;
+			font-weight: bold;
+
+		}
+
 		.side-border {
-		border: 1px solid #eb4034;
+			border: 1px solid #eb4034;
 		}
-		
+
 		.button {
-		 background-color: #eb4034;
-		  border: none;
-		  color: white;
-		  padding: 8px 24px;
-		  text-align: center;
-		  display: inline-block;
-		  font-size: 16px;
-		  margin: 4px 2px;
-		  cursor: pointer;
-		  float: right;
-		
+			background-color: #eb4034;
+			border: none;
+			color: white;
+			padding: 8px 24px;
+			text-align: center;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			float: right;
+
 		}
-		.heading
-		{
-		text-align: center;
-		color: #fff;}
-		
-		.label
-		{
-		margin:8px 0px;}
-		
-		.user-input {
-			
+
+		.heading {
+			text-align: center;
+			color: #fff;
 		}
-		
-		.link{
-		color:#eb4034; }
-		
-		.address
-		
-		{
-		margin: 4px 0px;}
-</style>
+
+		.label {
+			margin: 8px 0px;
+		}
+
+		.user-input {}
+
+		.link {
+			color: #eb4034;
+		}
+
+		.address {
+			margin: 4px 0px;
+		}
+
+		.date {
+			width: 75%;
+			font-size: 16px;
+		}
+	</style>
 </head>
 
 <body>
-<div class="form-container">
-<div class="side-border">
-<div class="header">
-  <h1 class="heading"> BANK APPLICATION</h1>
-</div>
+	<div class="form-container">
+		<div class="side-border">
+			<div class="header">
+				<h1 class="heading"> BANK APPLICATION</h1>
+			</div>
 
-<div class="container">
-	<form>
-	<div class="label">
-		<label for="firstname">First Name:</label><br>
-		<input type="text" class="user-input" id="firstname"><br>
-	</div>	
-	
-	<div class="label">
-		<label for="Lastname">Last Name:</label><br>
-		<input type="text" class="user-input" id="Lastname"><br>
-	</div>	
-	
-	<div class="label">
-		<label for="Email">Email:</label><br>
-		<input type="email" class="user-input" id="Email"><br>
-	</div>
-	
-	<div class="label">
-		<label for="mobilenumber">Mobile Number:</label><br>
-		<input type="text" class="user-input" id="mobilenumber" maxlength="10"><br>
-	</div>
-	
-	<div class="label">
-		<label for="Address">Address:</label><br>
-		<input type="text" class="user-input address"  id="Address1" ><br>
-		<input type="text" class="user-input address" id="Address2" ><br>
-		<input type="text" class="user-input address" id="Address3" ><br>
-	</div>
-		
-		
-		<div>
-		<button class="button">save</button><br>
-		<a class="link" href="./login.html"> Go to Login </a>
+			<div class="container">
+				<form>
+					<div class="label">
+						<label for="firstname">First Name:</label><br>
+						<input type="text" class="user-input" id="firstname"><br>
+					</div>
+
+					<div class="label">
+						<label for="Lastname">Last Name:</label><br>
+						<input type="text" class="user-input" id="Lastname"><br>
+					</div>
+
+					<div class="label">
+						<label for="Email">Email:</label><br>
+						<input type="email" class="user-input" id="Email"><br>
+					</div>
+
+					<div class="label">
+						<label for="mobilenumber">Mobile Number:</label><br>
+						<input type="text" class="user-input" id="mobilenumber" maxlength="10"><br>
+					</div>
+
+					<div class="label">
+						<label for="dateofbirth">D.O.B :</label><br>
+						<input type="date" class="user-input date" id="dateofbirth"><br>
+					</div>
+
+					<div class="label">
+						<label for="Address">Address:</label><br>
+						<input type="text" class="user-input address" id="Address1"><br>
+						<input type="text" class="user-input address" id="Address2"><br>
+						<input type="text" class="user-input address" id="Address3"><br>
+					</div>
+
+
+					<div>
+						<button class="button">save</button><br>
+						<a class="link" href="./login.html"> Go to Login </a>
+					</div>
+
+
+
+				</form>
+			</div>
 		</div>
-		
-		
-		
-	</form>
-</div>
-</div>
 
-</div>
+	</div>
 
 
 
