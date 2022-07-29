@@ -51,7 +51,6 @@
 			margin: 8px 0px;
 		}
 
-		.user-input {}
 
 		.link {
 			color: #eb4034;
@@ -109,15 +108,11 @@
 						<input type="text" class="user-input address" id="Address3"><br>
 					</div>
 
-
-					<div>
-						<button class="button">save</button><br>
-						<a class="link" href="./login.html"> Go to Login </a>
-					</div>
-
-
-
 				</form>
+				<div>
+					<button class="button" onclick="saveData()">save</button><br>
+					<a class="link" href="./login.html"> Go to Login </a>
+				</div>
 			</div>
 		</div>
 
@@ -126,3 +121,21 @@
 
 
 </body>
+<script>
+	function saveData() {
+		var userdata={
+			fisrtName: document.getElementById("firstname").value,
+			lastName: document.getElementById("Lastname").value
+		};
+		localStorage.setItem('users',JSON.stringify(userdata));
+		console.log(userdata);
+		// console.log(document.getElementById("firstname").value);
+		// console.log(document.getElementById("Lastname").value);
+		// console.log(document.getElementById("Email").value);
+		// console.log(document.getElementById("mobilenumber").value);
+		// console.log(document.getElementById("dateofbirth").value);
+		// console.log(document.getElementById("Address1").value);
+		// console.log(document.getElementById("Address2").value);
+		// console.log(document.getElementById("Address3").value);
+	}
+</script>
